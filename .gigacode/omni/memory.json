@@ -1,0 +1,36 @@
+{
+ "schemaVersion": 1,
+ "files": {
+  "fee5878af175f486337e76dfe": {
+   "fileId": "fee5878af175f486337e76dfe",
+   "rootFileId": "fee5878af175f486337e76dfe",
+   "fileRef": "C:\\Users\\ARTUR\\Desktop\\Space\\projects\\gento\\temp\\composer_install_error.png",
+   "origin": "user",
+   "currentVersionId": "vf00595006eaa80fad5874374",
+   "createdAt": "2026-11-25T08:56:36.289Z"
+  }
+ },
+ "versions": {
+  "vf00595006eaa80fad5874374": {
+   "fileVersionId": "vf00595006eaa80fad5874374",
+   "fileId": "fee5878af175f486337e76dfe",
+   "sha256": "774498d4ccb75204e934f52561905d38404f396da4c5ef74067cb72f0cd3ca1e",
+   "mediaType": "image",
+   "metadata": {},
+   "sizeBytes": 1246238,
+   "mimeType": "image/png",
+   "source": {
+    "protocol": "local",
+    "locator": "composer_install_error.png"
+   },
+   "recognition": {
+    "ingestionConfigHash": "20ec8679559ba3d1bbcb7162ba2cc10b1f61777429883972b3834913961ff155",
+    "detectorVersion": "gigacode-static-image-sniff-and-decode/1",
+    "probeStatus": "partial"
+   },
+   "createdAt": "2026-11-25T08:56:36.289Z"
+  }
+ },
+ "executions": {},
+ "entries": {}
+}

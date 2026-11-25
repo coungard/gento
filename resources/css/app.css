@@ -1,0 +1,107 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-brand-50: oklch(0.97 0.014 254);
+    --color-brand-100: oklch(0.932 0.032 255);
+    --color-brand-200: oklch(0.882 0.059 254);
+    --color-brand-300: oklch(0.809 0.105 252);
+    --color-brand-400: oklch(0.707 0.165 254);
+    --color-brand-500: oklch(0.623 0.214 259);
+    --color-brand-600: oklch(0.546 0.245 262);
+    --color-brand-700: oklch(0.488 0.243 264);
+    --color-brand-800: oklch(0.424 0.199 265);
+    --color-brand-900: oklch(0.379 0.146 265);
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-slate-50 text-slate-900 antialiased;
+    }
+
+    [type='text'],
+    [type='email'],
+    [type='tel'],
+    [type='number'],
+    [type='search'],
+    select,
+    textarea {
+        @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20;
+    }
+
+    label {
+        @apply block text-sm font-medium text-slate-700;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60;
+    }
+
+    .btn-ghost {
+        @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold text-brand-700 transition hover:bg-brand-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60;
+    }
+
+    .field {
+        @apply space-y-1.5;
+    }
+
+    .field-error {
+        @apply text-xs font-medium text-red-600;
+    }
+
+    .badge {
+        @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium;
+    }
+
+    .rich-text {
+        @apply space-y-4 leading-relaxed text-slate-700;
+    }
+
+    .rich-text h2 {
+        @apply mt-8 text-xl font-semibold text-slate-900;
+    }
+
+    .rich-text h3 {
+        @apply mt-6 text-lg font-semibold text-slate-900;
+    }
+
+    .rich-text ul {
+        @apply list-disc space-y-1 pl-5;
+    }
+
+    .rich-text ol {
+        @apply list-decimal space-y-1 pl-5;
+    }
+
+    .rich-text a {
+        @apply text-brand-700 underline decoration-brand-300 underline-offset-2 hover:decoration-brand-700;
+    }
+
+    .rich-text table {
+        @apply w-full border-collapse text-sm;
+    }
+
+    .rich-text th,
+    .rich-text td {
+        @apply border border-slate-200 px-3 py-2 text-left align-top;
+    }
+
+    .rich-text th {
+        @apply bg-slate-50 font-semibold text-slate-900;
+    }
+}
