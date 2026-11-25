@@ -12,6 +12,13 @@ Laravel 13 application (PHP 8.4) with Filament 4 admin panel. E-commerce for gen
 - **Testing:** PHPUnit 12, Faker
 - **Styling:** Laravel Pint (code formatter)
 
+## Shell
+
+- **PowerShell only.** Never use Linux/bash commands.
+- Use `Get-ChildItem` instead of `ls`, `Get-Content` instead of `cat`, `Select-String` instead of `grep`.
+- Use `Test-Path` instead of `[ -f ]` / `[ -d ]`, `$env:VAR` for environment variables.
+- Avoid `sed`, `awk`, `find` — use PowerShell-native equivalents.
+
 ## Commands
 
 ```bash
